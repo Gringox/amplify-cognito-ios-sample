@@ -11,11 +11,9 @@ import UIKit
 import AWSMobileClient
 
 class Cognito {
-    
     class func signIn() {
-        AWSMobileClient.default().initialize { (userState, error) in
-            if let userState = userState {
-                print("UserState: \(userState.rawValue)")
+        Cognito.initialize { (error) in
+            if error == nil {
                 AWSMobileClient.default().signIn(username: "username", password: "password") { (signInResult, error) in
                     if let error = error  {
                         print("\(error.localizedDescription)")
@@ -30,15 +28,13 @@ class Cognito {
                         }
                     }
                 }
-            } else if let error = error {
-                print("error: \(error.localizedDescription)")
             }
         }
     }
     
     class func showBuiltInUi(navigationController: UINavigationController) {
-        AWSMobileClient.default().initialize { (userState, error) in
-            if let userState = userState {
+        Cognito.initialize { (error) in
+            if error != nil {
                 AWSMobileClient.default().showSignIn(navigationController: navigationController, { (signInState, error) in
                     if let signInState = signInState {
                         print("Sign in flow completed: \(signInState)")
@@ -46,56 +42,79 @@ class Cognito {
                         print("error logging in: \(error.localizedDescription)")
                     }
                 })
-            } else if let error = error {
-                print("error: \(error.localizedDescription)")
             }
         }
     }
     
     class func signOut() {
-        AWSMobileClient.default().initialize { (userState, error) in
-            if let userState = userState {
+        Cognito.initialize { (error) in
+            if error != nil {
                 AWSMobileClient.default().signOut(options: SignOutOptions(signOutGlobally: true)) { (error) in
                     print("Error: \(error.debugDescription)")
                 }
-            } else if let error = error {
-                print("error: \(error.localizedDescription)")
             }
         }
     }
     
     class func getUsername() {
-        AWSMobileClient.default().initialize { (userState, error) in
-            if let userState = userState {
-                print(AWSMobileClient.default().username)
-            } else if let error = error {
-                print("error: \(error.localizedDescription)")
+        Cognito.initialize { (error) in
+            if error != nil {
+                print(AWSMobileClient.default().username as Any)
             }
         }
     }
     
     class func getTokens() {
         AWSMobileClient.default().initialize { (userState, error) in
-            if let userState = userState {
-                AWSMobileClient.default().getTokens { (tokens, error) in
-                    if let error = error {
-                        print("Error getting tokens \(error.localizedDescription)")
-                    } else if let tokens = tokens {
-                        if let idToken = tokens.idToken {
-                            print(idToken.tokenString!)
-                        }
-                        
-                        if let accessToken = tokens.accessToken {
-                            print(accessToken.tokenString!)
-                        }
-                        
-                        if let refreshToken = tokens.idToken {
-                            print(refreshToken.tokenString!)
+            Cognito.initialize { (error) in
+                if error != nil {
+                    AWSMobileClient.default().getTokens { (tokens, error) in
+                        if let error = error {
+                            print("Error getting tokens \(error.localizedDescription)")
+                        } else if let tokens = tokens {
+                            if let idToken = tokens.idToken {
+                                print(idToken.tokenString!)
+                            }
+                            
+                            if let accessToken = tokens.accessToken {
+                                print(accessToken.tokenString!)
+                            }
+                            
+                            if let refreshToken = tokens.idToken {
+                                print(refreshToken.tokenString!)
+                            }
                         }
                     }
                 }
-            } else if let error = error {
-                print("error: \(error.localizedDescription)")
+            }
+        }
+    }
+}
+
+
+//MARK: Helpers
+extension Cognito {
+    class func initialize(_ completionHandler: @escaping (Error?) -> Void) {
+        AWSMobileClient.default().initialize { (userState, error) in
+            if let userState = userState {
+                print("UserState: \(userState.rawValue) \n")
+                switch (userState) {
+                case .signedIn:
+                    print("User is signed in.")
+                case .guest:
+                    print("Guest is signed in.")
+                case .signedOut:
+                    print("Signed out.")
+                case .signedOutFederatedTokensInvalid:
+                    print("Signed out Federated Tokens invalid")
+                case .signedOutUserPoolsTokenInvalid:
+                    print("Signed out User Pool Tokens invalid")
+                case .unknown:
+                    print("Unknown user state")
+                }
+                completionHandler(nil)
+            } else {
+                completionHandler(error)
             }
         }
     }
