@@ -65,24 +65,22 @@ class Cognito {
     }
     
     class func getTokens() {
-        AWSMobileClient.default().initialize { (userState, error) in
-            Cognito.initialize { (error) in
-                if error != nil {
-                    AWSMobileClient.default().getTokens { (tokens, error) in
-                        if let error = error {
-                            print("Error getting tokens \(error.localizedDescription)")
-                        } else if let tokens = tokens {
-                            if let idToken = tokens.idToken {
-                                print(idToken.tokenString!)
-                            }
-                            
-                            if let accessToken = tokens.accessToken {
-                                print(accessToken.tokenString!)
-                            }
-                            
-                            if let refreshToken = tokens.idToken {
-                                print(refreshToken.tokenString!)
-                            }
+        Cognito.initialize { (error) in
+            if error != nil {
+                AWSMobileClient.default().getTokens { (tokens, error) in
+                    if let error = error {
+                        print("Error getting tokens \(error.localizedDescription)")
+                    } else if let tokens = tokens {
+                        if let idToken = tokens.idToken {
+                            print(idToken.tokenString!)
+                        }
+                        
+                        if let accessToken = tokens.accessToken {
+                            print(accessToken.tokenString!)
+                        }
+                        
+                        if let refreshToken = tokens.idToken {
+                            print(refreshToken.tokenString!)
                         }
                     }
                 }
