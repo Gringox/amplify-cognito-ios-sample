@@ -95,21 +95,7 @@ extension Cognito {
     class func initialize(_ completionHandler: @escaping (Error?) -> Void) {
         AWSMobileClient.default().initialize { (userState, error) in
             if let userState = userState {
-                print("UserState: \(userState.rawValue) \n")
-                switch (userState) {
-                case .signedIn:
-                    print("User is signed in.")
-                case .guest:
-                    print("Guest is signed in.")
-                case .signedOut:
-                    print("Signed out.")
-                case .signedOutFederatedTokensInvalid:
-                    print("Signed out Federated Tokens invalid")
-                case .signedOutUserPoolsTokenInvalid:
-                    print("Signed out User Pool Tokens invalid")
-                case .unknown:
-                    print("Unknown user state")
-                }
+                print("UserState: \(userState.rawValue)")
                 completionHandler(nil)
             } else {
                 completionHandler(error)
