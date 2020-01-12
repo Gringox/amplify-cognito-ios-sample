@@ -21,17 +21,11 @@ class LoginViewController: UIViewController {
     @IBAction func signIn(_ sender: Any) {
         if let username = userNameTF.text, let password = passwordTF.text {
             self.resignFirstResponder()
-            signInUser(with: username, password: password)
-        }
-    }
-}
-
-extension LoginViewController {
-    private func signInUser(with username: String, password: String) {
-        Cognito.signIn(with: username, password: password) {[weak self] (error) in
-            guard let self = self else {return}
-            DispatchQueue.main.async {
-                self.navigationController?.popViewController(animated: true)
+            Cognito.signIn(with: username, password: password) {[weak self] (error) in
+                guard let self = self else {return}
+                DispatchQueue.main.async {
+                    self.navigationController?.popViewController(animated: true)
+                }
             }
         }
     }

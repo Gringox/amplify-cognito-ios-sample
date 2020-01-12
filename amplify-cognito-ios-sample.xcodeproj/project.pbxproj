@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E50955323CAAB9D008A204E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50955223CAAB9D008A204E /* LoginViewController.swift */; };
+		1E50955523CBC8B7008A204E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50955423CBC8B7008A204E /* SignUpViewController.swift */; };
 		B7954D667CF302758D5D12EE /* Pods_amplify_cognito_ios_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C905F18C4F584D1E421BF48 /* Pods_amplify_cognito_ios_sample.framework */; };
 		C51D1E2823C7749400565E9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C51D1E2723C7749400565E9A /* Main.storyboard */; };
 		C51D1E2A23C774E600565E9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51D1E2923C774E600565E9A /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		1E50955223CAAB9D008A204E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1E50955423CBC8B7008A204E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2BB82C683A2F079DD0FE606D /* Pods-amplify-cognito-ios-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amplify-cognito-ios-sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amplify-cognito-ios-sample/Pods-amplify-cognito-ios-sample.debug.xcconfig"; sourceTree = "<group>"; };
 		4C905F18C4F584D1E421BF48 /* Pods_amplify_cognito_ios_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amplify_cognito_ios_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5E4F4E148F4059C90B6CE5 /* Pods-amplify-cognito-ios-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amplify-cognito-ios-sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-amplify-cognito-ios-sample/Pods-amplify-cognito-ios-sample.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				C53C659123C4D43E0034D3B2 /* Cognito.swift */,
 				C51D1E2723C7749400565E9A /* Main.storyboard */,
 				1E50955223CAAB9D008A204E /* LoginViewController.swift */,
+				1E50955423CBC8B7008A204E /* SignUpViewController.swift */,
 				C51D1E2923C774E600565E9A /* ViewController.swift */,
 			);
 			path = "amplify-cognito-ios-sample";
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E50955523CBC8B7008A204E /* SignUpViewController.swift in Sources */,
 				1E50955323CAAB9D008A204E /* LoginViewController.swift in Sources */,
 				C51D1E2A23C774E600565E9A /* ViewController.swift in Sources */,
 				C53C657E23C4CA3D0034D3B2 /* AppDelegate.swift in Sources */,
