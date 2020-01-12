@@ -13,7 +13,6 @@ import AWSMobileClient
 typealias CognitoCompletionBlock = (Error?) -> Void
 
 class Cognito {
-    
     class func signUpUser(with username: String, password: String, userAttributes: [String: String]?, _ completionHandler: @escaping CognitoCompletionBlock) {
         AWSMobileClient.default().signUp(username: username,
                                                 password: password, userAttributes: userAttributes!) { (signUpResult, error) in
