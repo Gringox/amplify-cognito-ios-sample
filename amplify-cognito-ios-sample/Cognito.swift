@@ -21,8 +21,30 @@ class Cognito {
                                                         print(error)
                                                     } else {
                                                         print("Successfully Signed up")
-                                                        
                                                     }
+                                                    completionHandler(error)
+        }
+    }
+    
+    class func confirmUser(username: String, confirmationCode: String, _ completionHandler: @escaping CognitoCompletionBlock) {
+        AWSMobileClient.default().confirmSignUp(username: username, confirmationCode: confirmationCode) { (signUpResult, error) in
+            if let error = error  {
+                print(error)
+            } else {
+                print("Successfully confirmed user")
+            }
+            completionHandler(error)
+        }
+    }
+    
+    class func resendConfirmationCode(username: String, _ completionHandler: @escaping CognitoCompletionBlock) {
+        AWSMobileClient.default().resendSignUpCode(username: username) { (signUpResult, error) in
+            if let error = error  {
+                print("Failed sending confirmation code again")
+                print(error)
+            } else {
+                print("Resent confirmtion code")
+            }
         }
     }
     

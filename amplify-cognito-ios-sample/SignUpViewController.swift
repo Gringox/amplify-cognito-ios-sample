@@ -30,8 +30,11 @@ class SignUpViewController: UIViewController {
                                password: password,
                                userAttributes: ["email":email, "name":name, "phone_number":phone]) {[weak self] (error) in
                                 guard let self = self else {return}
-                                DispatchQueue.main.async {
-                                    self.navigationController?.popViewController(animated: true)
+                                
+                                if error == nil {
+                                    DispatchQueue.main.async {
+                                        self.navigationController?.popViewController(animated: true)
+                                    }
                                 }
             }
         }

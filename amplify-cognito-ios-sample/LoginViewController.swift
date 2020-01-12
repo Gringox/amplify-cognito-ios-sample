@@ -23,8 +23,11 @@ class LoginViewController: UIViewController {
             self.resignFirstResponder()
             Cognito.signIn(with: username, password: password) {[weak self] (error) in
                 guard let self = self else {return}
-                DispatchQueue.main.async {
-                    self.navigationController?.popViewController(animated: true)
+                
+                if error == nil {
+                    DispatchQueue.main.async {
+                        self.navigationController?.popViewController(animated: true)
+                    }
                 }
             }
         }
