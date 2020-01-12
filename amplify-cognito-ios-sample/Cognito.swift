@@ -51,22 +51,32 @@ class Cognito {
         }
     }
     
-    class func signOut() {
+    class func signOut(_ completionHandler: @escaping CognitoCompletionBlock) {
         Cognito.initialize { (error) in
             if error == nil {
                 AWSMobileClient.default().signOut(options: SignOutOptions(signOutGlobally: true)) { (error) in
                     if error != nil {
                         print("Error: \(error.debugDescription)")
                     }
+                    completionHandler(error)
                 }
+            } else {
+                completionHandler(error)
             }
         }
     }
     
-    class func getUsername() {
+    class func getUsername(_ completion: ((_ username: String?) -> Void)?) {
         Cognito.initialize { (error) in
             if error == nil {
-                print(AWSMobileClient.default().username as Any)
+                if let username = AWSMobileClient.default().username {
+                    print("Loggedin user: " + username)
+                    completion?(username)
+                } else {
+                    completion?(nil)
+                }
+            } else {
+                completion?(nil)
             }
         }
     }
