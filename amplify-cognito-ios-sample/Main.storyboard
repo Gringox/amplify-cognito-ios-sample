@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="cVn-1A-kAx">
-                                <rect key="frame" x="155.5" y="213" width="103" height="470"/>
+                                <rect key="frame" x="155.5" y="240.5" width="103" height="415"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b04-B9-5NY">
                                         <rect key="frame" x="25.5" y="0.0" width="52" height="30"/>
@@ -62,33 +62,29 @@
                                             <action selector="hostedUiPressed:" destination="zVB-sR-kgL" eventType="touchUpInside" id="gdC-Up-KoC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGE-In-1GD">
-                                        <rect key="frame" x="28.5" y="220" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQn-Nn-exw">
-                                        <rect key="frame" x="17.5" y="275" width="68" height="30"/>
+                                        <rect key="frame" x="17.5" y="220" width="68" height="30"/>
                                         <state key="normal" title="Built-in UI"/>
                                         <connections>
                                             <action selector="builtInUiPressed:" destination="zVB-sR-kgL" eventType="touchUpInside" id="d8B-pF-oGW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSM-8F-OzL">
-                                        <rect key="frame" x="0.0" y="330" width="103" height="30"/>
+                                        <rect key="frame" x="0.0" y="275" width="103" height="30"/>
                                         <state key="normal" title="Global sign out"/>
                                         <connections>
                                             <action selector="globalSignOutPressed:" destination="zVB-sR-kgL" eventType="touchUpInside" id="C6c-xc-cOi"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WF-o9-x0y">
-                                        <rect key="frame" x="16" y="385" width="71" height="30"/>
+                                        <rect key="frame" x="16" y="330" width="71" height="30"/>
                                         <state key="normal" title="Username"/>
                                         <connections>
                                             <action selector="usernamePressed:" destination="zVB-sR-kgL" eventType="touchUpInside" id="fmG-cT-KLU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCU-kn-1y7">
-                                        <rect key="frame" x="27" y="440" width="49" height="30"/>
+                                        <rect key="frame" x="27" y="385" width="49" height="30"/>
                                         <state key="normal" title="Tokens"/>
                                         <connections>
                                             <action selector="tokensPressed:" destination="zVB-sR-kgL" eventType="touchUpInside" id="4KH-ub-kge"/>
@@ -169,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Bn-j8-W3u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1348" y="161"/>
+            <point key="canvasLocation" x="2817" y="161"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="AzC-jd-46B">
@@ -238,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Dt-M5-kOh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2161" y="161"/>
+            <point key="canvasLocation" x="1287" y="161"/>
         </scene>
         <!--Confirm User View Controller-->
         <scene sceneID="wDB-jX-ISj">
@@ -299,7 +295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3V7-5N-G9O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2928" y="161"/>
+            <point key="canvasLocation" x="2054" y="161"/>
         </scene>
     </scenes>
 </document>
