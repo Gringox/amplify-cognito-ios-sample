@@ -10,13 +10,16 @@ import Foundation
 import UIKit
 import AWSMobileClient
 
+typealias CognitoCompletionBlock = (Error?) -> Void
+
 class Cognito {
-    class func signIn(with username: String, password: String) {
+    class func signIn(with username: String, password: String, _ completionHandler: @escaping CognitoCompletionBlock) {
         Cognito.initialize { (error) in
             if error == nil {
                 AWSMobileClient.default().signIn(username: username, password: password) { (signInResult, error) in
                     if let error = error  {
                         print("\(error.localizedDescription)")
+                        completionHandler(error)
                     } else if let signInResult = signInResult {
                         switch (signInResult.signInState) {
                         case .signedIn:
@@ -26,6 +29,8 @@ class Cognito {
                         default:
                             print("Sign In needs info which is not yet supported.")
                         }
+                        
+                        completionHandler(nil)
                     }
                 }
             }
@@ -50,7 +55,9 @@ class Cognito {
         Cognito.initialize { (error) in
             if error == nil {
                 AWSMobileClient.default().signOut(options: SignOutOptions(signOutGlobally: true)) { (error) in
-                    print("Error: \(error.debugDescription)")
+                    if error != nil {
+                        print("Error: \(error.debugDescription)")
+                    }
                 }
             }
         }
@@ -92,7 +99,7 @@ class Cognito {
 
 //MARK: Helpers
 extension Cognito {
-    class func initialize(_ completionHandler: @escaping (Error?) -> Void) {
+    class func initialize(_ completionHandler: @escaping CognitoCompletionBlock) {
         AWSMobileClient.default().initialize { (userState, error) in
             if let userState = userState {
                 print("UserState: \(userState.rawValue)")

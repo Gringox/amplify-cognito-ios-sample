@@ -27,6 +27,11 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController {
     private func signInUser(with username: String, password: String) {
-        Cognito.signIn(with: username, password: password)
+        Cognito.signIn(with: username, password: password) {[weak self] (error) in
+            guard let self = self else {return}
+            DispatchQueue.main.async {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
     }
 }
