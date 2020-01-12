@@ -116,7 +116,7 @@
             </objects>
             <point key="canvasLocation" x="556.52173913043487" y="160.71428571428569"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="om5-Cp-FfL">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="U4t-ka-MoS" customClass="LoginViewController" customModule="amplify_cognito_ios_sample" customModuleProvider="target" sceneMemberID="viewController">
@@ -157,7 +157,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vyX-zN-vwo"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Hh0-tu-Cab"/>
+                    <navigationItem key="navigationItem" title="Login" id="Hh0-tu-Cab"/>
                     <connections>
                         <outlet property="passwordTF" destination="af2-lg-bth" id="ax8-7p-dmj"/>
                         <outlet property="userNameTF" destination="njt-cw-xIH" id="cHl-2o-Nff"/>
@@ -167,7 +167,7 @@
             </objects>
             <point key="canvasLocation" x="2817" y="161"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Sign up-->
         <scene sceneID="AzC-jd-46B">
             <objects>
                 <viewController storyboardIdentifier="SignUpViewController" id="c9a-7F-aPi" customClass="SignUpViewController" customModule="amplify_cognito_ios_sample" customModuleProvider="target" sceneMemberID="viewController">
@@ -223,7 +223,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sqB-M7-bHg"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9Qm-Yc-Edp"/>
+                    <navigationItem key="navigationItem" title="Sign up" id="9Qm-Yc-Edp"/>
                     <connections>
                         <outlet property="emailTF" destination="CCr-50-CoO" id="BUg-y2-EOV"/>
                         <outlet property="nameTF" destination="ovc-bf-Gks" id="GZv-vX-A39"/>
@@ -236,7 +236,7 @@
             </objects>
             <point key="canvasLocation" x="1287" y="161"/>
         </scene>
-        <!--Confirm User View Controller-->
+        <!--Confirm user-->
         <scene sceneID="wDB-jX-ISj">
             <objects>
                 <viewController id="J7g-ga-JS3" customClass="ConfirmUserViewController" customModule="amplify_cognito_ios_sample" customModuleProvider="target" sceneMemberID="viewController">
@@ -287,7 +287,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ul2-ab-Inv"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bcQ-Fe-N94"/>
+                    <navigationItem key="navigationItem" title="Confirm user" id="bcQ-Fe-N94"/>
                     <connections>
                         <outlet property="confirmationCodeTF" destination="czs-66-zrJ" id="Y40-Av-Sdq"/>
                         <outlet property="userNameTF" destination="qeT-8w-wPK" id="Jrc-lx-c4a"/>
