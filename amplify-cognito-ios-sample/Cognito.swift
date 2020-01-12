@@ -34,7 +34,7 @@ class Cognito {
     
     class func showBuiltInUi(navigationController: UINavigationController) {
         Cognito.initialize { (error) in
-            if error != nil {
+            if error == nil {
                 AWSMobileClient.default().showSignIn(navigationController: navigationController, { (signInState, error) in
                     if let signInState = signInState {
                         print("Sign in flow completed: \(signInState)")
@@ -48,7 +48,7 @@ class Cognito {
     
     class func signOut() {
         Cognito.initialize { (error) in
-            if error != nil {
+            if error == nil {
                 AWSMobileClient.default().signOut(options: SignOutOptions(signOutGlobally: true)) { (error) in
                     print("Error: \(error.debugDescription)")
                 }
@@ -58,7 +58,7 @@ class Cognito {
     
     class func getUsername() {
         Cognito.initialize { (error) in
-            if error != nil {
+            if error == nil {
                 print(AWSMobileClient.default().username as Any)
             }
         }
@@ -66,7 +66,7 @@ class Cognito {
     
     class func getTokens() {
         Cognito.initialize { (error) in
-            if error != nil {
+            if error == nil {
                 AWSMobileClient.default().getTokens { (tokens, error) in
                     if let error = error {
                         print("Error getting tokens \(error.localizedDescription)")
