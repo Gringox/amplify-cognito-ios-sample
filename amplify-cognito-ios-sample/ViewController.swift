@@ -23,10 +23,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func hostedUiPressed(_ sender: Any) {
+        if let navigationController = self.navigationController {
+            Cognito.showHostedUI(navigationController: navigationController)
+        }
     }
     
     @IBAction func builtInUiPressed(_ sender: Any) {
-        Cognito.showBuiltInUi(navigationController: self.navigationController!)
+        if let navigationController = self.navigationController {
+            Cognito.showBuiltInUi(navigationController: navigationController)
+        }
     }
     
     @IBAction func globalSignOutPressed(_ sender: Any) {

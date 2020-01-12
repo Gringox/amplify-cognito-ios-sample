@@ -51,6 +51,20 @@ class Cognito {
         }
     }
     
+    class func showHostedUI(navigationController: UINavigationController) {
+        let hostedUIOptions = HostedUIOptions(scopes: ["openid", "email"])
+
+        // Present the Hosted UI sign in.
+        AWSMobileClient.default().showSignIn(navigationController: navigationController, hostedUIOptions: hostedUIOptions) { (userState, error) in
+            if let error = error as? AWSMobileClientError {
+                print(error.localizedDescription)
+            }
+            if let userState = userState {
+                print("Status: \(userState.rawValue)")
+            }
+        }
+    }
+    
     class func signOut(_ completionHandler: @escaping CognitoCompletionBlock) {
         Cognito.initialize { (error) in
             if error == nil {
