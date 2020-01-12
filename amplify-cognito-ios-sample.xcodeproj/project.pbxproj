@@ -16,7 +16,6 @@
 		C53C657E23C4CA3D0034D3B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53C657D23C4CA3D0034D3B2 /* AppDelegate.swift */; };
 		C53C658023C4CA3D0034D3B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53C657F23C4CA3D0034D3B2 /* SceneDelegate.swift */; };
 		C53C658423C4CA400034D3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53C658323C4CA400034D3B2 /* Assets.xcassets */; };
-		C53C658723C4CA400034D3B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53C658623C4CA400034D3B2 /* Preview Assets.xcassets */; };
 		C53C658A23C4CA400034D3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53C658823C4CA400034D3B2 /* LaunchScreen.storyboard */; };
 		C53C659223C4D43E0034D3B2 /* Cognito.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53C659123C4D43E0034D3B2 /* Cognito.swift */; };
 		C53C659423C4DA2E0034D3B2 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C53C659323C4DA2E0034D3B2 /* awsconfiguration.json */; };
@@ -35,7 +34,6 @@
 		C53C657D23C4CA3D0034D3B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C53C657F23C4CA3D0034D3B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C53C658323C4CA400034D3B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C53C658623C4CA400034D3B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C53C658923C4CA400034D3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C53C658B23C4CA400034D3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C53C659123C4D43E0034D3B2 /* Cognito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cognito.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				C53C658323C4CA400034D3B2 /* Assets.xcassets */,
 				C53C658823C4CA400034D3B2 /* LaunchScreen.storyboard */,
 				C53C658B23C4CA400034D3B2 /* Info.plist */,
-				C53C658523C4CA400034D3B2 /* Preview Content */,
 				C53C659123C4D43E0034D3B2 /* Cognito.swift */,
 				C51D1E2723C7749400565E9A /* Main.storyboard */,
 				1E50955223CAAB9D008A204E /* LoginViewController.swift */,
@@ -98,14 +95,6 @@
 				C51D1E2923C774E600565E9A /* ViewController.swift */,
 			);
 			path = "amplify-cognito-ios-sample";
-			sourceTree = "<group>";
-		};
-		C53C658523C4CA400034D3B2 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				C53C658623C4CA400034D3B2 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		D4D2D2F7761CA037092CB0ED /* Pods */ = {
@@ -180,7 +169,6 @@
 				C51D1E2823C7749400565E9A /* Main.storyboard in Resources */,
 				C53C659423C4DA2E0034D3B2 /* awsconfiguration.json in Resources */,
 				C53C658A23C4CA400034D3B2 /* LaunchScreen.storyboard in Resources */,
-				C53C658723C4CA400034D3B2 /* Preview Assets.xcassets in Resources */,
 				C53C658423C4CA400034D3B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"amplify-cognito-ios-sample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 48U93E3996;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "amplify-cognito-ios-sample/Info.plist";
@@ -400,7 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"amplify-cognito-ios-sample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 48U93E3996;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "amplify-cognito-ios-sample/Info.plist";
