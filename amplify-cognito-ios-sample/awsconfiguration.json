@@ -14,6 +14,7 @@
         "Default": {
             "PoolId": "ID_FROM_COGNITO_USER_POOL",
             "AppClientId": "APP_CLIENT_ID_FROM_COGNITO_USER_POOL",
+            "AppClientSecret": "APP_CLIENT_SECRET_FROM_COGNITO_USER_POOL",
             "Region": "REGION_FROM_COGNITO_USER_POOL"
         }
     }
