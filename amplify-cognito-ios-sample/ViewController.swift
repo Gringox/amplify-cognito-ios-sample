@@ -13,10 +13,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func signInPressed(_ sender: Any) {
-        Cognito.signIn()
-    }
-    
     @IBAction func hostedUiPressed(_ sender: Any) {
     }
     

@@ -11,10 +11,10 @@ import UIKit
 import AWSMobileClient
 
 class Cognito {
-    class func signIn() {
+    class func signIn(with username: String, password: String) {
         Cognito.initialize { (error) in
             if error == nil {
-                AWSMobileClient.default().signIn(username: "username", password: "password") { (signInResult, error) in
+                AWSMobileClient.default().signIn(username: username, password: password) { (signInResult, error) in
                     if let error = error  {
                         print("\(error.localizedDescription)")
                     } else if let signInResult = signInResult {
