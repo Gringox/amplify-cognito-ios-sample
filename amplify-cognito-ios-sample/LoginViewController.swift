@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func signIn(_ sender: Any) {
         if let username = userNameTF.text, let password = passwordTF.text {
+            self.resignFirstResponder()
             signInUser(with: username, password: password)
         }
     }
