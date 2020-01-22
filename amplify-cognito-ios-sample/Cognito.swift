@@ -85,7 +85,7 @@ class Cognito {
         }
     }
     
-    class func showHostedUI(navigationController: UINavigationController) {
+    class func showHostedUI(navigationController: UINavigationController, completionHandler: @escaping CognitoCompletionBlock) {
         let hostedUIOptions = HostedUIOptions(scopes: ["openid", "email"])
 
         // Present the Hosted UI sign in.
@@ -95,6 +95,12 @@ class Cognito {
             }
             if let userState = userState {
                 print("Status: \(userState.rawValue)")
+                switch userState {
+                case .signedIn:
+                    completionHandler(nil)
+                default:
+                    print("User not signed in")
+                }
             }
         }
     }

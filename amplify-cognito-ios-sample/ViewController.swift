@@ -24,7 +24,13 @@ class ViewController: UIViewController {
     
     @IBAction func hostedUiPressed(_ sender: Any) {
         if let navigationController = self.navigationController {
-            Cognito.showHostedUI(navigationController: navigationController)
+            Cognito.showHostedUI(navigationController: navigationController) { (error) in
+                guard error == nil else {return}
+                
+                DispatchQueue.main.async {
+                    self.configure()
+                }
+            }
         }
     }
     

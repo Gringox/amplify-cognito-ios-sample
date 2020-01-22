@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1E50955323CAAB9D008A204E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50955223CAAB9D008A204E /* LoginViewController.swift */; };
 		1E50955523CBC8B7008A204E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50955423CBC8B7008A204E /* SignUpViewController.swift */; };
 		1E50955723CBCC5C008A204E /* ConfirmUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50955623CBCC5C008A204E /* ConfirmUserViewController.swift */; };
-		B7954D667CF302758D5D12EE /* Pods_amplify_cognito_ios_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C905F18C4F584D1E421BF48 /* Pods_amplify_cognito_ios_sample.framework */; };
+		41EFE40DB9615791F6337865 /* Pods_amplify_cognito_ios_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9F31CA77EA6FEBF47F36A8 /* Pods_amplify_cognito_ios_sample.framework */; };
 		C51D1E2823C7749400565E9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C51D1E2723C7749400565E9A /* Main.storyboard */; };
 		C51D1E2A23C774E600565E9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51D1E2923C774E600565E9A /* ViewController.swift */; };
 		C53C657E23C4CA3D0034D3B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53C657D23C4CA3D0034D3B2 /* AppDelegate.swift */; };
@@ -18,16 +18,15 @@
 		C53C658423C4CA400034D3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53C658323C4CA400034D3B2 /* Assets.xcassets */; };
 		C53C658A23C4CA400034D3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53C658823C4CA400034D3B2 /* LaunchScreen.storyboard */; };
 		C53C659223C4D43E0034D3B2 /* Cognito.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53C659123C4D43E0034D3B2 /* Cognito.swift */; };
-		C53C659423C4DA2E0034D3B2 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C53C659323C4DA2E0034D3B2 /* awsconfiguration.json */; };
+		C59BD7A623D86F1D00AE069B /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C59BD7A523D86F1D00AE069B /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E50955223CAAB9D008A204E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1E50955423CBC8B7008A204E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1E50955623CBCC5C008A204E /* ConfirmUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmUserViewController.swift; sourceTree = "<group>"; };
-		2BB82C683A2F079DD0FE606D /* Pods-amplify-cognito-ios-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amplify-cognito-ios-sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amplify-cognito-ios-sample/Pods-amplify-cognito-ios-sample.debug.xcconfig"; sourceTree = "<group>"; };
-		4C905F18C4F584D1E421BF48 /* Pods_amplify_cognito_ios_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amplify_cognito_ios_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A5E4F4E148F4059C90B6CE5 /* Pods-amplify-cognito-ios-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amplify-cognito-ios-sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-amplify-cognito-ios-sample/Pods-amplify-cognito-ios-sample.release.xcconfig"; sourceTree = "<group>"; };
+		AF9C83E6ACB924C883562BD8 /* Pods-amplify-cognito-ios-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amplify-cognito-ios-sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-amplify-cognito-ios-sample/Pods-amplify-cognito-ios-sample.release.xcconfig"; sourceTree = "<group>"; };
+		C14B6E762CB8D1BA3F6CE643 /* Pods-amplify-cognito-ios-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amplify-cognito-ios-sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amplify-cognito-ios-sample/Pods-amplify-cognito-ios-sample.debug.xcconfig"; sourceTree = "<group>"; };
 		C51D1E2723C7749400565E9A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C51D1E2923C774E600565E9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C53C657A23C4CA3D0034D3B2 /* amplify-cognito-ios-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "amplify-cognito-ios-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,7 +36,8 @@
 		C53C658923C4CA400034D3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C53C658B23C4CA400034D3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C53C659123C4D43E0034D3B2 /* Cognito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cognito.swift; sourceTree = "<group>"; };
-		C53C659323C4DA2E0034D3B2 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		C59BD7A523D86F1D00AE069B /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		FF9F31CA77EA6FEBF47F36A8 /* Pods_amplify_cognito_ios_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amplify_cognito_ios_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,19 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7954D667CF302758D5D12EE /* Pods_amplify_cognito_ios_sample.framework in Frameworks */,
+				41EFE40DB9615791F6337865 /* Pods_amplify_cognito_ios_sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7FF6DB1BE7CF49ED7689A9CE /* Frameworks */ = {
+		5EF4BDAA517FFDF8D94AE468 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C905F18C4F584D1E421BF48 /* Pods_amplify_cognito_ios_sample.framework */,
+				FF9F31CA77EA6FEBF47F36A8 /* Pods_amplify_cognito_ios_sample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97DD57EE634747C5794574EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C14B6E762CB8D1BA3F6CE643 /* Pods-amplify-cognito-ios-sample.debug.xcconfig */,
+				AF9C83E6ACB924C883562BD8 /* Pods-amplify-cognito-ios-sample.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C53C657123C4CA3D0034D3B2 = {
@@ -65,8 +74,8 @@
 			children = (
 				C53C657C23C4CA3D0034D3B2 /* amplify-cognito-ios-sample */,
 				C53C657B23C4CA3D0034D3B2 /* Products */,
-				D4D2D2F7761CA037092CB0ED /* Pods */,
-				7FF6DB1BE7CF49ED7689A9CE /* Frameworks */,
+				97DD57EE634747C5794574EA /* Pods */,
+				5EF4BDAA517FFDF8D94AE468 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,7 +90,7 @@
 		C53C657C23C4CA3D0034D3B2 /* amplify-cognito-ios-sample */ = {
 			isa = PBXGroup;
 			children = (
-				C53C659323C4DA2E0034D3B2 /* awsconfiguration.json */,
+				C59BD7A523D86F1D00AE069B /* awsconfiguration.json */,
 				C53C657D23C4CA3D0034D3B2 /* AppDelegate.swift */,
 				C53C657F23C4CA3D0034D3B2 /* SceneDelegate.swift */,
 				C53C658323C4CA400034D3B2 /* Assets.xcassets */,
@@ -97,15 +106,6 @@
 			path = "amplify-cognito-ios-sample";
 			sourceTree = "<group>";
 		};
-		D4D2D2F7761CA037092CB0ED /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2BB82C683A2F079DD0FE606D /* Pods-amplify-cognito-ios-sample.debug.xcconfig */,
-				7A5E4F4E148F4059C90B6CE5 /* Pods-amplify-cognito-ios-sample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,11 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C53C658E23C4CA400034D3B2 /* Build configuration list for PBXNativeTarget "amplify-cognito-ios-sample" */;
 			buildPhases = (
-				7D261544420A0F074EB88942 /* [CP] Check Pods Manifest.lock */,
+				A259B6CF1DEF984C4CBAEC58 /* [CP] Check Pods Manifest.lock */,
 				C53C657623C4CA3D0034D3B2 /* Sources */,
 				C53C657723C4CA3D0034D3B2 /* Frameworks */,
 				C53C657823C4CA3D0034D3B2 /* Resources */,
-				090473A30660B3C4CA482C79 /* [CP] Embed Pods Frameworks */,
+				4ACD0B1A5714AB4EC983BA29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,8 +166,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59BD7A623D86F1D00AE069B /* awsconfiguration.json in Resources */,
 				C51D1E2823C7749400565E9A /* Main.storyboard in Resources */,
-				C53C659423C4DA2E0034D3B2 /* awsconfiguration.json in Resources */,
 				C53C658A23C4CA400034D3B2 /* LaunchScreen.storyboard in Resources */,
 				C53C658423C4CA400034D3B2 /* Assets.xcassets in Resources */,
 			);
@@ -176,24 +176,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		090473A30660B3C4CA482C79 /* [CP] Embed Pods Frameworks */ = {
+		4ACD0B1A5714AB4EC983BA29 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-amplify-cognito-ios-sample/Pods-amplify-cognito-ios-sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-amplify-cognito-ios-sample/Pods-amplify-cognito-ios-sample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-amplify-cognito-ios-sample/Pods-amplify-cognito-ios-sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-amplify-cognito-ios-sample/Pods-amplify-cognito-ios-sample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-amplify-cognito-ios-sample/Pods-amplify-cognito-ios-sample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7D261544420A0F074EB88942 /* [CP] Check Pods Manifest.lock */ = {
+		A259B6CF1DEF984C4CBAEC58 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,7 +379,7 @@
 		};
 		C53C658F23C4CA400034D3B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BB82C683A2F079DD0FE606D /* Pods-amplify-cognito-ios-sample.debug.xcconfig */;
+			baseConfigurationReference = C14B6E762CB8D1BA3F6CE643 /* Pods-amplify-cognito-ios-sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,7 +401,7 @@
 		};
 		C53C659023C4CA400034D3B2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A5E4F4E148F4059C90B6CE5 /* Pods-amplify-cognito-ios-sample.release.xcconfig */;
+			baseConfigurationReference = AF9C83E6ACB924C883562BD8 /* Pods-amplify-cognito-ios-sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
